@@ -1,0 +1,16 @@
+<div class="d-flex justify-content-center" style="margin-top: 300px">
+  <div class="p-2">
+    <input
+      name="searchWord"
+      type="text"
+      [(ngModel)]="searchWord"
+      (change)="search()"
+      class="form-control"
+    />
+  </div>
+  <div class="p-2">
+    <button class="btn btn-primary" (click)="search()">Search</button>
+  </div>
+</div>
+
+<div #mapRef style="width: 100%; height: 500px"></div>
